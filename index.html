@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pointcount 1.0.0</title>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        .counter { margin: 20px; }
+        button { font-size: 20px; padding: 10px; margin: 10px; }
+        .number { font-size: 30px; }
+    </style>
+</head>
+<body>
+    <div class="counter" id="sawyer">
+        <h2>Sawyer</h2>
+        <button onclick="updateCounter('sawyer', -1)">-</button>
+        <span class="number" id="sawyerNumber">0</span>
+        <button onclick="updateCounter('sawyer', 1)">+</button>
+    </div>
+
+    <div class="counter" id="quinn">
+        <h2>Quinn</h2>
+        <button onclick="updateCounter('quinn', -1)">-</button>
+        <span class="number" id="quinnNumber">0</span>
+        <button onclick="updateCounter('quinn', 1)">+</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
